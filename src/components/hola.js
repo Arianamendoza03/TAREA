@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Hola({mensaje, pie}) {
+function hola({mensaje, pie}) {
     return (
         <div>
             <h1>PUCESE</h1>
@@ -10,4 +10,4 @@ function Hola({mensaje, pie}) {
     );
 }
 
-export default Hola;
+export default hola;
