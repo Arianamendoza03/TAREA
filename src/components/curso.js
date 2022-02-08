@@ -12,7 +12,7 @@ function curso({cursos, onEliminarCursos}) {
 
     return (
         <div>
-            <h2>Listado de cursos</h2>
+            <h2>Listado de curso</h2>
             <hr/>
             <Cursoform />
             <hr/>
