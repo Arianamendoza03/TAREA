@@ -15,7 +15,7 @@ export default function Cursoform(props) {
         console.log("Enviando Formulario",nuevoCurso);
     }
   return(
-  <form onSubmit={agregarCursoHandler} >
+  <form onSubmit={agregarCursoHandler}>
       <input type='text' 
       id='id'
       placeholder='Ingrese un nuevo curso' 
