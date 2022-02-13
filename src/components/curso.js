@@ -1,20 +1,29 @@
 import React from 'react';
-import Cursoform from './cursoform';
+import Cursoform from './Cursoform';
 
 
-function curso({cursos, onEliminarCursos}) {
+function Cursos({cursos, onEliminarCursos}) {
     
-    const eliminarCursoHandler = (id) => {
+    const recibir=()=>{
+        var rec = document.getElementById("id").value;
+        document.getElementById("escribir").innerHTML= "EL curso nuevo es :"+rec+""
+    }
+        const eliminarCursoHandler = (id) => {
         //console.log("eliminado curso de id: ", id);
         onEliminarCursos(id);
     }
 
-
+//
     return (
         <div>
-            <h2>Listado de curso</h2>
+            <h2>Listado de cursos</h2>
             <hr/>
             <Cursoform />
+            <div id='escribir'>
+                <button onClick={recibir}>
+                    Agregar
+                </button>
+            </div>
             <hr/>
             <ul>
                 {
@@ -38,4 +47,4 @@ const Cursos = () => {
     );
 }
 */
-export default curso;
+export default Cursos;
